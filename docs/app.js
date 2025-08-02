@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <p class="mt-4 text-sm text-gray-500">
                 Organizing a hackathon?
-                <a href="/organizer" class="text-indigo-400 hover:underline">Log in to the organizer portal here.</a>
+                <a href="https://eddyzow.net/podium/organizer/" class="text-indigo-400 hover:underline">Log in to the organizer portal here.</a>
             </p>
             <p id="join-error-message" class="text-red-400 text-sm mt-2 h-5"></p>
         `;
