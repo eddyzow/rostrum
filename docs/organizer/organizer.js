@@ -3331,8 +3331,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 prompt.innerHTML = `<p class="text-green-400">Event deleted successfully. Redirecting...</p>`;
 
               setTimeout(() => {
-                localStorage.removeItem("podium-pro-organizer-token");
-                window.location.replace("./");
+                window.location.reload();
               }, 2000);
             } catch (error) {
               if (prompt)

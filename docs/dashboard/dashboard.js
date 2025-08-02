@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             ${noteHTML}
             <form id="project-form" class="space-y-4" onsubmit="return false;">
-                <div>
+<div>
                     ${getLabel("project-name", true)}
                     <input type="text" id="project-name" placeholder="e.g., EcoSort AI" class="dark-input mt-1 block w-full rounded-md shadow-sm text-lg p-2" value="${
                       projectData?.projectName || ""
