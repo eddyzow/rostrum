@@ -1,0 +1,145 @@
+/* dashboard.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Apply Inter to body or root elements */
+body {
+  font-family: "Inter", sans-serif; /* Or your preferred fallback stack */
+}
+
+/* Styles for form inputs to match the homepage */
+.dark-input {
+  background-color: #1f2937; /* bg-gray-800 */
+  border-color: #4b5563; /* border-gray-600 */
+  color: #d1d5db; /* text-gray-300 */
+  border-width: 1px;
+}
+
+.dark-input::placeholder {
+  color: #6b7280; /* text-gray-500 */
+}
+
+.dark-input:focus {
+  outline: none;
+  border-color: #6366f1; /* border-indigo-500 */
+  --tw-ring-color: #6366f1; /* Add this for the focus ring */
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+.dark-input:disabled {
+  background-color: #111827; /* A darker gray */
+  color: #4b5563; /* Faded text color */
+  cursor: not-allowed;
+  border-color: #374151; /* A darker border */
+}
+
+/* --- Remove browser autofill background --- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  caret-color: white;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* Styles for the traffic-light status indicator */
+.status-indicator {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px; /* Pill shape */
+  font-size: 1rem; /* text-sm */
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.status-indicator::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* --- Improved Ping animation for the status dot --- */
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.ping-animation::after {
+  content: "";
+  position: absolute;
+  left: 12px; /* Align with the dot */
+  top: 45%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.status-green {
+  background-color: rgba(74, 222, 128, 0.2);
+  color: #4ade80; /* green-400 */
+  border: 2px solid #1e994b;
+}
+.status-green::before,
+.status-green::after {
+  background-color: #4ade80;
+}
+
+.status-yellow {
+  background-color: rgba(155, 126, 13, 0.2);
+  color: #facc15; /* yellow-400 */
+  border: 2px solid #facc15;
+}
+.status-yellow::before,
+.status-yellow::after {
+  background-color: #facc15;
+}
+
+.status-red {
+  background-color: rgba(175, 58, 58, 0.2);
+  color: #f87171; /* red-400 */
+  border: 2px solid #f87171;
+}
+.status-red::before,
+.status-red::after {
+  background-color: #f87171;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}

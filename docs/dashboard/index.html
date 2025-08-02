@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Podium Pro</title>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get("token");
+      if (token) {
+        localStorage.setItem("podium-pro-token", token);
+        // Clean the URL to hide the token from the user's view
+        window.history.replaceState(
+          {},
+          document.title,
+          window.location.pathname
+        );
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body class="bg-gray-900 text-gray-300">
+    <header
+      class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10 border-b border-gray-700"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="../" class="text-2xl font-bold text-white no-underline"
+          >Podium Pro</a
+        >
+        <nav class="hidden md:flex space-x-6 items-center">
+          <a href="#" class="text-white font-semibold">Dashboard</a>
+          <a
+            id="logout-button"
+            class="text-gray-400 hover:text-white transition cursor-pointer"
+            >Log Out</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+      <div id="dashboard-content">
+        <div class="text-center">
+          <p class="text-lg">Verifying your session...</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

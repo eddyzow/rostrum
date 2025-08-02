@@ -1,0 +1,12 @@
+/* Custom styles for the animated toggle switches */
+.toggle-bg {
+  transition: background-color 0.2s ease-in-out;
+}
+
+input:checked + .toggle-bg {
+  background-color: #4f46e5; /* indigo-600 */
+}
+
+input:checked + .toggle-bg .dot {
+  transform: translateX(1.5rem); /* 1.5rem = 6px */
+}

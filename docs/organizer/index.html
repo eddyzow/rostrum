@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podium Pro Organizer Portal</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="organizer.css" />
+  </head>
+  <body class="bg-gray-900 text-gray-300 flex flex-col min-h-screen">
+    <header
+      class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10 border-b border-gray-700"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-white">
+          <a href="../" class="hover:text-gray-300 transition">Podium Pro</a>
+        </h1>
+        <nav class="hidden md:flex space-x-6 items-center">
+          <a
+            href="../#how-it-works"
+            class="text-gray-400 hover:text-white transition"
+            >How It Works</a
+          >
+          <a
+            href="https://github.com/eddyzow/podium"
+            target="_blank"
+            class="text-gray-400 hover:text-white transition"
+            >GitHub Repo</a
+          >
+          <a
+            href="./"
+            class="bg-indigo-600 button text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition font-semibold"
+            >Organizer Portal</a
+          >
+        </nav>
+        <button class="md:hidden text-gray-400">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 flex-grow">
+      <div id="organizer-main-content">
+        <p class="text-lg text-gray-400 text-center">Loading...</p>
+      </div>
+    </main>
+
+    <footer class="mt-auto border-t border-gray-800">
+      <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+        <p>
+          An open-source project by
+          <a href="https://eddyzow.net" class="text-indigo-400" target="_blank"
+            >Eddy Zhao (@eddyzow)</a
+          >. Generative AI was used in the making of Podium Pro.
+        </p>
+      </div>
+    </footer>
+
+    <script src="organizer.js"></script>
+  </body>
+</html>

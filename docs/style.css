@@ -1,3 +1,82 @@
+/* Custom Styles for Podium Pro */
+
+/* style.css (or your main input CSS file for Tailwind) */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Apply Inter to body or root elements */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; /* Or your preferred fallback stack */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  caret-color: white;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* Custom styles for dark mode form elements */
+.dark-input {
+  background-color: #1f2937; /* bg-gray-800 */
+  border-color: #4b5563; /* border-gray-600 */
+  color: #d1d5db; /* text-gray-300 */
+}
+
+.dark-input::placeholder {
+  color: #6b7280; /* text-gray-500 */
+}
+
+.dark-input:focus {
+  outline: none;
+  border-color: #6366f1; /* border-indigo-500 */
+}
+
+.py-9 {
+  transition: all 0.25s ease-out;
+}
+
+.py-9:hover {
+  transform: scale(0.99);
+}
+
+button,
+.button {
+  transition: all 0.25s ease-out;
+}
+
+button:hover,
+.button:hover {
+  transform: scale(0.97);
+}
+button:active,
+.button:active {
+  transform: scale(0.94);
+}
+
+/* Shake animation for invalid input */
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
