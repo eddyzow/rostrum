@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <p class="mt-4 text-sm text-gray-500">
                 Organizing a hackathon?
-                <a href="https://eddyzow.net/podium/organizer/" class="text-indigo-400 hover:underline">Log in to the organizer portal here.</a>
+                <a href="https://eddyzow.net/rostrum/organizer/" class="text-indigo-400 hover:underline">Log in to the organizer portal here.</a>
             </p>
             <p id="join-error-message" class="text-red-400 text-sm mt-2 h-5"></p>
         `;
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="text-center">
                 <p class="text-lg text-gray-400">You're currently attending: <strong class="text-white">${eventName}</strong></p>
                 <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-                    <a href="https://eddyzow.net/podium/dashboard/" class="bg-indigo-600 text-white w-full sm:w-auto px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition text-lg">Go to Attendee Dashboard</a>
+                    <a href="https://eddyzow.net/rostrum/dashboard/" class="bg-indigo-600 text-white w-full sm:w-auto px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition text-lg">Go to Attendee Dashboard</a>
                     <button id="logout-button" class="bg-gray-700 text-white w-full sm:w-auto px-6 py-3 rounded-lg font-semibold hover:bg-gray-600 transition text-lg">Log Out</button>
                 </div>
             </div>

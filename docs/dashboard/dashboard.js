@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/verify-magic-token",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/verify-magic-token",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startCountdown();
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/get-project-status",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/get-project-status",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -536,7 +536,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/save-project",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/save-project",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -610,7 +610,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const token = localStorage.getItem("podium-pro-token");
         try {
           const response = await fetch(
-            "https://podium-d74a4f5f498c.herokuapp.com/api/leave-project",
+            "https://rostrum-d74a4f5f498c.herokuapp.com/api/leave-project",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -671,7 +671,7 @@ document.addEventListener("DOMContentLoaded", () => {
       dismissNoteButton.addEventListener("click", async () => {
         const token = localStorage.getItem("podium-pro-token");
         const response = await fetch(
-          "https://podium-d74a4f5f498c.herokuapp.com/api/clear-ship-note",
+          "https://rostrum-d74a4f5f498c.herokuapp.com/api/clear-ship-note",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -747,7 +747,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const response = await fetch(
-            "https://podium-d74a4f5f498c.herokuapp.com/api/join-project-with-code",
+            "https://rostrum-d74a4f5f498c.herokuapp.com/api/join-project-with-code",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -801,7 +801,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const token = localStorage.getItem("podium-pro-token");
         try {
           const response = await fetch(
-            "https://podium-d74a4f5f498c.herokuapp.com/api/create-project",
+            "https://rostrum-d74a4f5f498c.herokuapp.com/api/create-project",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -851,7 +851,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const projectData = getProjectDataFromForm();
       const token = localStorage.getItem("podium-pro-token");
       const saveResponse = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/save-project",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/save-project",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -882,7 +882,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const token = localStorage.getItem("podium-pro-token");
     const response = await fetch(
-      "https://podium-d74a4f5f498c.herokuapp.com/api/update-ship-status",
+      "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-ship-status",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -1079,7 +1079,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const token = localStorage.getItem("podium-pro-token");
         const response = await fetch(
-          "https://podium-d74a4f5f498c.herokuapp.com/api/add-teammate",
+          "https://rostrum-d74a4f5f498c.herokuapp.com/api/add-teammate",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -1117,7 +1117,7 @@ document.addEventListener("DOMContentLoaded", () => {
               const token = localStorage.getItem("podium-pro-token");
               try {
                 const response = await fetch(
-                  "https://podium-d74a4f5f498c.herokuapp.com/api/remove-teammate",
+                  "https://rostrum-d74a4f5f498c.herokuapp.com/api/remove-teammate",
                   {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -1173,7 +1173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const token = localStorage.getItem("podium-pro-token");
         saveButton.textContent = "Saving...";
         const response = await fetch(
-          "https://podium-d74a4f5f498c.herokuapp.com/api/save-team-name",
+          "https://rostrum-d74a4f5f498c.herokuapp.com/api/save-team-name",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -1219,7 +1219,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/get-next-matchup",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/get-next-matchup",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -1351,7 +1351,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/submit-vote",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/submit-vote",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -1382,7 +1382,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/submit-tie",
+        "https://rostrum-d74a4f5f498c.herokuapp.com/api/submit-tie",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
