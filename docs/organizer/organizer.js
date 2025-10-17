@@ -706,7 +706,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const token = localStorage.getItem("podium-pro-organizer-token");
       const response = await fetch(
-        "https://rostrum-d74a4f5f498c.herokuapp.com/api/get-voting-results",
+        "https://podium-d74a4f5f498c.herokuapp.com/api/get-voting-results",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -1299,7 +1299,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadEventDetails = async (eventCode, token) => {
     try {
       const response = await fetch(
-        "https://rostrum-d74a4f5f498c.herokuapp.com/api/get-event-details",
+        "https://podium-d74a4f5f498c.herokuapp.com/api/get-event-details",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -1390,7 +1390,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (tokenFromUrl) {
       try {
         const response = await fetch(
-          "https://rostrum-d74a4f5f498c.herokuapp.com/api/verify-organizer-magic-token",
+          "https://podium-d74a4f5f498c.herokuapp.com/api/verify-organizer-magic-token",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -1419,7 +1419,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://rostrum-d74a4f5f498c.herokuapp.com/api/verify-organizer-magic-token",
+        "https://podium-d74a4f5f498c.herokuapp.com/api/verify-organizer-magic-token",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -1522,7 +1522,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/send-organizer-magic-link",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/send-organizer-magic-link",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -1686,7 +1686,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/create-event",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/create-event",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -1961,7 +1961,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const token = localStorage.getItem("podium-pro-organizer-token");
       try {
         const response = await fetch(
-          "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-event-details",
+          "https://podium-d74a4f5f498c.herokuapp.com/api/update-event-details",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -2088,7 +2088,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
           const token = localStorage.getItem("podium-pro-organizer-token");
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/add-organizer-to-event",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/add-organizer-to-event",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -2167,7 +2167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
               try {
                 const response = await fetch(
-                  "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-event-details",
+                  "https://podium-d74a4f5f498c.herokuapp.com/api/update-event-details",
                   {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -2220,7 +2220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-organizer-permission",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/update-organizer-permission",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -2351,7 +2351,7 @@ document.addEventListener("DOMContentLoaded", () => {
           try {
             const token = localStorage.getItem("podium-pro-organizer-token");
             const response = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-project-organizer",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/update-project-organizer",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -2398,7 +2398,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-project-status-organizer",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/update-project-status-organizer",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -2435,7 +2435,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-project-status-organizer",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/update-project-status-organizer",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -2486,7 +2486,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           try {
             const response = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-project-status-organizer",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/update-project-status-organizer",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -2524,7 +2524,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const token = localStorage.getItem("podium-pro-organizer-token");
           try {
             const response = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/ban-voter",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/ban-voter",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -2553,7 +2553,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const token = localStorage.getItem("podium-pro-organizer-token");
           try {
             const response = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/unban-voter",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/unban-voter",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -2584,7 +2584,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const token = localStorage.getItem("podium-pro-organizer-token");
           try {
             const response = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/erase-voter-votes",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/erase-voter-votes",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -2629,7 +2629,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const token = localStorage.getItem("podium-pro-organizer-token");
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/update-awards-settings",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/update-awards-settings",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -3037,7 +3037,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const token = localStorage.getItem("podium-pro-organizer-token");
           try {
             const response = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/remove-attendee-organizer",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/remove-attendee-organizer",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -3068,7 +3068,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const token = localStorage.getItem("podium-pro-organizer-token");
           try {
             const banResponse = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/add-ban",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/add-ban",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -3083,7 +3083,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!banResponse.ok) throw new Error(banData.message);
 
             const removeResponse = await fetch(
-              "https://rostrum-d74a4f5f498c.herokuapp.com/api/remove-attendee-organizer",
+              "https://podium-d74a4f5f498c.herokuapp.com/api/remove-attendee-organizer",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -3151,7 +3151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const token = localStorage.getItem("podium-pro-organizer-token");
         try {
           const response = await fetch(
-            "https://rostrum-d74a4f5f498c.herokuapp.com/api/add-ban",
+            "https://podium-d74a4f5f498c.herokuapp.com/api/add-ban",
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -3201,7 +3201,7 @@ document.addEventListener("DOMContentLoaded", () => {
               const token = localStorage.getItem("podium-pro-organizer-token");
               try {
                 const response = await fetch(
-                  "https://rostrum-d74a4f5f498c.herokuapp.com/api/unban",
+                  "https://podium-d74a4f5f498c.herokuapp.com/api/unban",
                   {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -3313,7 +3313,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const token = localStorage.getItem("podium-pro-organizer-token");
             try {
               const response = await fetch(
-                "https://rostrum-d74a4f5f498c.herokuapp.com/api/delete-event",
+                "https://podium-d74a4f5f498c.herokuapp.com/api/delete-event",
                 {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
