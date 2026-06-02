@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await fetch(
-        "https://podium-d74a4f5f498c.herokuapp.com/api/get-session-info",
+        "https://eddyzow.herokuapp.com/api/get-session-info",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const response = await fetch(
-          "https://podium-d74a4f5f498c.herokuapp.com/api/verify-code",
+          "https://eddyzow.herokuapp.com/api/verify-code",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const response = await fetch(
-          "https://podium-d74a4f5f498c.herokuapp.com/api/send-magic-link",
+          "https://eddyzow.herokuapp.com/api/send-magic-link",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
